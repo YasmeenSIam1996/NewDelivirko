@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerOrders"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/indicatorCanceled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_expandable_closed" />
+
+        <TextView
+            android:id="@+id/tvOrderId"
+            style="@style/OrdersTableTextStyle"
+            android:fontFamily="@font/droid_arabic_kufi"
+            android:text="65987" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderTime"
+            style="@style/OrdersTableTextStyle"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/droid_arabic_kufi"
+            android:gravity="end"
+            android:text="02:45" />
+
+        <TextView
+            android:id="@+id/tvOrderTimeHint"
+            style="@style/OrdersTableTextStyle"
+            android:layout_marginStart="3dp"
+            android:gravity="start"
+            android:text="صباحاً"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+    <TextView
+        android:id="@+id/tvOrderDate"
+        style="@style/OrdersTableTextStyle"
+        android:fontFamily="@font/droid_arabic_kufi"
+        android:text="2018/12/12"
+        android:textStyle="bold" />
+
+</LinearLayout>

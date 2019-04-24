@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/layoutForgetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:backgroundTint="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:text="@string/returnOrderQuestion"
+            style="@style/TitleDialogStyle" />
+
+        <TextView
+            android:id="@+id/tvForget2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="@string/returnOrderMessage"
+            android:textColor="@color/GreyDialogMsg"
+            android:textSize="@dimen/textSizeDialogMsg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDialogReject"
+                style="@style/btnDialogStyle"
+                android:layout_marginEnd="3dp"
+                android:backgroundTint="@color/colorRedDelivirko"
+                android:drawableStart="@drawable/ic_false"
+                android:text="@string/reject" />
+
+            <Button
+                android:id="@+id/btnDialogAgree"
+                style="@style/btnDialogStyle"
+                android:layout_marginStart="3dp"
+                android:background="@drawable/true_or_false_btn"
+                android:drawableStart="@drawable/ic_true"
+                android:text="@string/agree" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCloseQuestionDialog"
+        style="@style/TvCloseDialog"
+        android:layout_below="@+id/layoutForgetDialog"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="@string/close" />
+
+</RelativeLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SheetTitleStyle" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/imgCancelDetailsRest"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_close_sheet"
+            app:layout_anchor="@id/tvSheetTitle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderIdRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/orderNumber" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderIdRestValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="24568" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderTimeDialogRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderTime" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvRestTimeValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderDateDialogRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderDate" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderDateRestValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderPilotName"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/stringPilotName" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvPilotNameValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPilotCode"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/stringPilotCode" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvPilotCodeValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderAddressRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderAddress" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvAddressRestValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderPriceRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderPrice" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvRestPriceValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDeliveryPriceRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvDeliveryPrice" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvDeliveryPriceValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderPointsRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderPoints" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvRestPointsValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderType"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/orderType" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderTypeValue"
+            style="@style/TvSheetDialogStyle2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvRateRest"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvRateRest" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <RatingBar
+                android:id="@+id/rateBarRest"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="5" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/company_bottom_sheet_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40.0dip"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="210.0dip"
+        android:layout_marginTop="40.0dip"
+        android:background="@drawable/bottom_pilot_shape">
+
+        <LinearLayout
+            android:id="@+id/layInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginEnd="120.0dip"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.0dip"
+                android:text="@string/CompanyName"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/ClintName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:drawableEnd="@drawable/person"
+                android:drawablePadding="5.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/PilotName"
+                android:textColor="#ff7e7e7e"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:drawableEnd="@drawable/telephone"
+                android:drawablePadding="5.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/PilotName"
+                android:textColor="#ff7e7e7e"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_lay2"
+            android:layout_marginStart="14.0dip"
+            android:layout_marginTop="10.0dip"
+            android:layout_marginEnd="14.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ReturnOrder"
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginEnd="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/cancel_order_shape"
+                android:text="@string/ReturnOrder"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/EndTravel"
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_weight="2.0"
+                android:background="@drawable/add_order_shape"
+                android:text="@string/EndTravel"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/location_lay2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layInfo"
+            android:paddingStart="30.0dip"
+            android:paddingEnd="30.0dip">
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/location" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="37.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20.0dip"
+                android:layout_marginEnd="-13.0dip"
+                android:background="@drawable/line_gap_shape" />
+
+            <ImageView
+                android:id="@+id/green_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40.0dip"
+                android:src="@drawable/green_oval" />
+
+            <TextView
+                android:id="@+id/fromLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/line"
+                android:textColor="#fff87c0a"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/toLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fromLocation"
+                android:layout_marginTop="15.0dip"
+                android:layout_toStartOf="@+id/line"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/company_image"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25.0dip"
+        android:scaleType="centerCrop"
+        app:riv_border_color="@android:color/black"
+        app:riv_border_width="2.0dip"
+        app:riv_corner_radius="100.0dip"
+        app:riv_oval="true" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="38.0dip"
+        android:layout_height="38.0dip"
+        android:layout_below="@+id/company_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-29.0dip"
+        android:layout_marginEnd="43.5dip"
+        android:background="@drawable/call_shape"
+        android:padding="10.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/call" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/price_back"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TxtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="2.0dip"
+            android:text="00"
+            android:textColor="@android:color/white"
+            android:textSize="18.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/currencyJeneh"
+            android:textColor="#fffaaf18"
+            android:textSize="13.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="1.5dip"
+            android:background="@drawable/electronic_shape"
+            android:padding="5.0dip"
+            android:text="@string/electronic"
+            android:textSize="9.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="27.0dip"
+        android:layout_marginTop="90.0dip"
+        android:background="@drawable/status_shape"
+        android:gravity="center"
+        android:paddingStart="30.0dip"
+        android:paddingEnd="20.0dip"
+        android:text="status"
+        android:textColor="@android:color/white"
+        android:textSize="10.0sp"
+        android:visibility="gone" />
+</RelativeLayout>

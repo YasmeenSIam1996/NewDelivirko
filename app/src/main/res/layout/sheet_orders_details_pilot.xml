@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SheetTitleStyle"
+            />
+
+        <ImageView
+            android:id="@+id/imgCancelDetailsPilot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/ic_close_sheet"
+            app:layout_anchor="@id/tvSheetTitle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderId"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/orderNumber" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderIdValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="24568" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderTimeDialog"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderTime" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvOrderTimeValue"
+                style="@style/TvSheetDialogStyle2"
+                android:gravity="end"
+                android:text="02:25" />
+
+            <TextView
+                android:id="@+id/tvTimeZonePilotSheet"
+                style="@style/TvSheetDialogStyle2"
+                android:gravity="start"
+                android:paddingStart="4dp"
+                android:text=" AM"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderDateDialog"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderDate" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderDateValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="2018/12/12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderClientName"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderClientName" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderClientValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="محمد جمال" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderAddress"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderAddress" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderAddressValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="العنوان هنا كاملا , رقم الدور , رقم الشقة" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderPrice"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderPrice" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderPriceValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="2000 جنيه" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDeliveryPrice"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvDeliveryPrice" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvDeliveryPriceValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="2000 جنيه" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderPoints"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvOrderPoints" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:id="@+id/tvOrderPointsValue"
+            style="@style/TvSheetDialogStyle2"
+            android:text="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPilotRate"
+            style="@style/TvDialogOrderStyle"
+            android:text="@string/tvRateRest" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <RatingBar
+                android:id="@+id/rateBarPilot"
+                style="@style/RatingBarStyle"
+                android:theme="@style/RatingBarTheme" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

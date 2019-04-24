@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.restaurant.SubOrdersRestFragment">
+
+    <RelativeLayout style="@style/LayoutArrowsStyle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnOlderSubOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow_left" />
+
+            <TextView
+                android:id="@+id/tvOlderOrders"
+                style="@style/textArrowsStyle"
+                android:text="@string/tvOlderOrders" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnNewerSubOrders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_round"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:id="@+id/tvNewerOrders"
+                style="@style/textArrowsStyle"
+                android:text="@string/tvNewerOrders" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/tvRestImageBill"
+                    android:layout_width="@dimen/roundImgRestSize"
+                    android:layout_height="@dimen/roundImgRestSize"
+                    android:src="@drawable/brand_logo"
+                    app:riv_oval="true" />
+
+                <TextView
+                    android:id="@+id/tvRestNameBill"
+                    style="@style/LayoutArrowsTitleStyle"
+                    android:text="برجر كينغ" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvNoOrders"
+                style="@style/OrderCounterStyle"
+                android:text="20 / 100" />
+
+            <TextView
+                android:id="@+id/tvWeekPilotOrders"
+                style="@style/WeekDateStyle"
+                android:text="2019/12/12 - 2019/12/12" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/OrdersTableTextStyle"
+            android:text="@string/orderNumber" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            style="@style/OrdersTableTextStyle"
+            android:text="@string/tvOrderTime" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            style="@style/OrdersTableTextStyle"
+            android:text="@string/tvOrderDate" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            style="@style/OrdersTableTextStyle"
+            android:text="@string/thePilot" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMyOrdersRest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

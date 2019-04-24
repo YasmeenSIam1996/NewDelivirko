@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_marginStart="10.0dip"
+        android:layout_marginEnd="10.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/place_shape"
+        android:drawableStart="@drawable/ic_location_on"
+        android:drawablePadding="10.0dip"
+        android:gravity="start|center"
+        android:hint="@string/place_hint"
+        android:padding="16.0dip"
+        android:textSize="14.0sp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/cart_btn_shape"
+        android:text="@string/SAVE_CONTINUE"
+        android:textColor="@android:color/white" />
+
+    <include
+        android:id="@+id/bottom_pilot"
+        layout="@layout/bottom_pilot"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@+id/rel" android:background="@drawable/dialog_shape" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_centerInParent="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/errorAnimation" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="20.0dip" android:layout_centerHorizontal="true" app:lottie_autoPlay="true" app:lottie_fileName="animation.json" app:lottie_repeatMode="restart" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:id="@+id/textDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loading_pilots" android:layout_below="@+id/errorAnimation" android:layout_centerHorizontal="true" />
+        <Button android:gravity="center" android:id="@+id/Done" android:layout_width="fill_parent" android:layout_margin="@dimen/edit_text_marginH" android:text="@string/Done" android:layout_alignParentBottom="true" style="@style/ButtonStyleActivity" />
+    </RelativeLayout>
+</RelativeLayout>

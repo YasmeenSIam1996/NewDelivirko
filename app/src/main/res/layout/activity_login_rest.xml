@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".LoginRestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:fitsSystemWindows="true">
+
+        <ImageView
+            android:id="@+id/img_p_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/delivery_bg" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtRestMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txtRestPass"
+            android:layout_marginTop="26dp"
+            app:hintEnabled="false">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_mobile"
+                style="@style/TxtStyleWhiteBg"
+                android:hint="@string/mobile_no"
+                android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtRestPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_p_login"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:hintEnabled="false"
+            app:passwordToggleDrawable="@drawable/show_password"
+            app:passwordToggleEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edt_password"
+                style="@style/TxtStyleWhiteBg"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txtRestMobile"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tvRestLogin"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgRestLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/brand_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgRestLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/deliverko" />
+
+        <TextView
+            android:id="@+id/tvForgetRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRestPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="90dp"
+            android:text="@string/tvForgetPass"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnLoginRest"
+            style="@style/ButtonStyleActivity"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/edit_text_marginH"
+            android:text="@string/btnLogin" />
+    </RelativeLayout>
+</ScrollView>

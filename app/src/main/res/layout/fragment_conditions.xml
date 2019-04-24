@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragRestStyle"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.ConditionsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/delivery_bg2" />
+
+        <ImageView
+            style="@style/MainLogo"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:overScrollMode="never"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/tvConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:lineSpacingExtra="@dimen/spacingBetweenLines"
+            android:textSize="@dimen/textConditionsSize"
+           />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAgreeConditions"
+        style="@style/ButtonStyleActivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="@dimen/edit_text_marginH"
+        android:text="@string/agree" />
+
+</LinearLayout>

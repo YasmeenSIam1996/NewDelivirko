@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30.0dip"
+        android:layout_marginEnd="30.0dip"
+        android:background="@drawable/dialog_shape">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center"
+            android:text="@string/logo_out"
+            android:textColor="@android:color/black"
+            android:textSize="20.0sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20.0dip"
+            android:paddingStart="15.0dip"
+            android:paddingEnd="15.0dip">
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="0.0dip"
+                android:layout_height="48.0dip"
+                android:layout_marginEnd="9.199982dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/no_back"
+                android:text="@string/NO"
+                android:textColor="#ff676767"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="0.0dip"
+                android:layout_height="48.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/yes_back"
+                android:text="@string/YES"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

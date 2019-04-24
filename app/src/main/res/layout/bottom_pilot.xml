@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomLayId"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40.0dip"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:layout_marginTop="40.0dip"
+        android:background="@drawable/bottom_pilot_shape">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15.0dip"
+            android:layout_marginEnd="120.0dip"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/PilotName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:text="@string/PilotName"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16.0sp" />
+
+            <TextView
+                android:id="@+id/motorcycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7.0dip"
+                android:drawableEnd="@drawable/motorcycle"
+                android:drawablePadding="5.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/PilotName"
+                android:textColor="#ff7e7e7e"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.0dip"
+                android:drawableEnd="@drawable/telephone"
+                android:drawablePadding="5.0dip"
+                android:gravity="center_vertical"
+                android:text="@string/PilotName"
+                android:textColor="#ff7e7e7e"
+                android:textSize="12.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14.0dip"
+            android:layout_marginEnd="14.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CancelOrder"
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_marginEnd="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/cancel_order_shape"
+                android:text="@string/CancelOrder"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/AddOrder"
+                android:layout_width="0.0dip"
+                android:layout_height="45.0dip"
+                android:layout_weight="2.0"
+                android:background="@drawable/add_order_shape"
+                android:text="@string/AddOrder"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Done"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_below="@+id/lay"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14.0dip"
+            android:layout_marginEnd="14.0dip"
+            android:layout_marginBottom="8.0dip"
+            android:background="@drawable/done_shape"
+            android:text="@string/Done"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/pilot_image"
+        android:layout_width="82.0dip"
+        android:layout_height="82.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25.0dip"
+        android:scaleType="centerCrop"
+        app:riv_border_color="@android:color/black"
+        app:riv_border_width="2.0dip"
+        app:riv_corner_radius="100.0dip"
+        app:riv_oval="true" />
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="38.0dip"
+        android:layout_height="38.0dip"
+        android:layout_below="@+id/pilot_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-29.0dip"
+        android:layout_marginEnd="43.5dip"
+        android:background="@drawable/call_shape"
+        android:padding="10.0dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/call" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/rating_shape"
+        android:orientation="horizontal"
+        android:padding="10.0dip">
+
+        <RatingBar
+            android:id="@+id/rateBarRest"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:rating="5.0" />
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="7.0dip"
+            android:gravity="center"
+            android:text="88"
+            android:textColor="#ffc9323b"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="27.0dip"
+        android:layout_marginTop="90.0dip"
+        android:background="@drawable/status_shape"
+        android:gravity="center"
+        android:paddingStart="30.0dip"
+        android:paddingEnd="20.0dip"
+        android:text="status"
+        android:textColor="@android:color/white"
+        android:textSize="10.0sp"
+        android:visibility="gone" />
+</RelativeLayout>

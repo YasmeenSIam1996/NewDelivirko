@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerBillRest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvOrderIdRest"
+        style="@style/OrdersTableTextStyle"
+        android:text="666666"
+        android:fontFamily="@font/droid_arabic_kufi_bold"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderTimeRest"
+            style="@style/OrdersTableTextStyle"
+            android:text="02:45"
+            android:fontFamily="@font/droid_arabic_kufi_bold"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOrderTimeHint"
+            style="@style/OrdersTableTextStyle"
+            android:text="صباحا" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+
+    <TextView
+        android:id="@+id/tvOrderDateRest"
+        style="@style/OrdersTableTextStyle"
+        android:gravity="center"
+        android:text="20/20/2020"
+        android:fontFamily="@font/droid_arabic_kufi_bold"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+
+    <TextView
+        android:id="@+id/tvPilotNameRest"
+        style="@style/OrdersTableTextStyle"
+        android:gravity="center"
+        android:text="محمد جمال"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:src="@drawable/ic_go_to_details" />
+
+</LinearLayout>

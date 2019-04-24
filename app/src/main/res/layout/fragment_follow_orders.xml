@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragRestStyle"
+    android:orientation="vertical"
+    tools:context=".fragment.restaurant.FollowOrdersFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tableHeaderHeight"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/textOrderNoWidth"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dotsLineWidth"
+            android:paddingEnd="5dp"
+            android:text="@string/orderNumber"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="@dimen/dividerSize"
+            android:layout_height="match_parent"
+            android:background="@color/greyDividerTabs" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/pilotDataMarginH"
+            android:text="@string/pilotInfo" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFollowOrders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

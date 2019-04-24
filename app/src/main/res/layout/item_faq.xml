@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greyLightBg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/faq_marginH"
+            android:src="@drawable/faq_arrow" />
+
+        <TextView
+            android:id="@+id/tvFaqQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="@dimen/faq_marginV"
+            android:layout_marginBottom="@dimen/faq_marginV"
+            android:text="سجلت الرقم الخاص بي ولم أستطع تسجيل الدخول به؟"
+            android:textSize="@dimen/faqTvSize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvFaqAnswer"
+        android:layout_width="match_parent"
+        android:textIsSelectable="true"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/spacingBetweenLines"
+        android:layout_marginStart="@dimen/faq_marginH"
+        android:layout_marginTop="@dimen/faq_marginV"
+        android:layout_marginEnd="@dimen/faq_marginH"
+        android:layout_marginBottom="@dimen/faq_marginV"
+        android:text="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها."
+        android:textSize="@dimen/faqTvSize" />
+</LinearLayout>

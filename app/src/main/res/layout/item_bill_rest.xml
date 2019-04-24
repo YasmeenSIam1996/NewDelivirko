@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerBillRest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvDateBillRest"
+        style="@style/OrdersTableTextStyle"
+        android:fontFamily="@font/droid_arabic_kufi_bold"
+        android:text="12/12/2012"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+    <TextView
+        android:id="@+id/tvTotalOrderBill"
+        style="@style/OrdersTableTextStyle"
+        android:gravity="center"
+        android:fontFamily="@font/droid_arabic_kufi_bold"
+        android:text="22555"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+    <ImageView
+        android:id="@+id/imgIsPayedBillRest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:src="@drawable/ic_not_payed" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/greyDividerTabs" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2">
+
+        <ImageView
+            android:id="@+id/imgIsTransferred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_not_payed" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_go_to_details" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/place_back_map_layout" android:background="@drawable/place_back_map" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/location" android:layout_alignParentEnd="true" />
+    <View android:id="@+id/line" android:background="@drawable/line_gap_shape" android:layout_width="37.0dip" android:layout_height="100.0dip" android:layout_marginEnd="-13.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@+id/green_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:src="@drawable/green_oval" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#fff87c0a" android:id="@+id/LocationFrom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/line" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/colorPrimary" android:id="@+id/LocationTo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:layout_toStartOf="@+id/line" />
+</RelativeLayout>

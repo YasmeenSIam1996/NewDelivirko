@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvMenu"
+        style="@style/TitleMenuStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/NavMenu" />
+
+    <LinearLayout
+        android:id="@+id/layoutPilotName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMenu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgRestaurantLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/brand_logo"
+            app:riv_oval="true"
+            app:riv_mutate_background="true" />
+
+        <TextView
+            android:id="@+id/tvMenuRestName"
+            style="@style/TitleMenuStyle"
+            android:layout_marginStart="@dimen/marginStartTitleMenu"
+            android:text="اسم المطعم" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sv_right_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layoutSignOutRest"
+        android:layout_below="@id/layoutPilotName"
+        android:layout_centerVertical="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/layout_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/restNavMain"
+
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_home" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/main" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/restNavMyOrders"
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_orders" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/myOrders" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/restNavFollowOrders"
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_location"
+                    android:tint="#fff" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/followOrders" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/restNavAccount"
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_bill" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/accountRest" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/restNavFreeOrders"
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_free_orders" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/freeOrders" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/dashed_line_menu" />
+
+            <LinearLayout
+                android:id="@+id/restNavSettings"
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_settings" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/settings" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/restNavSupply"
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_supply" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/supply" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/restNavConditions"
+                style="@style/ItemLayoutMenuStyle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_nav_conditions" />
+
+                <TextView
+                    style="@style/ItemMenuTextStyle"
+                    android:text="@string/rulesConditions" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layoutSignOutRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sign_out" />
+
+        <TextView
+            android:id="@+id/txtLogout"
+            style="@style/TitleMenuStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStartTitleMenu"
+            android:text="@string/signOut" />
+    </LinearLayout>
+</RelativeLayout>

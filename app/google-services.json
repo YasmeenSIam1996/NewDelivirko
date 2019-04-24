@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "621546375202",
+    "firebase_url": "https://deliverco.firebaseio.com",
+    "project_id": "deliverco",
+    "storage_bucket": "deliverco.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621546375202:android:393e4cf094314ba8",
+        "android_client_info": {
+          "package_name": "com.ict.delivirko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621546375202-f39k7ugq9ehjt1onpg2aos2jlcg0o33c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ict.delivirko",
+            "certificate_hash": "d20eeb37a49515b5182d111fb60444157ea9107d"
+          }
+        },
+        {
+          "client_id": "621546375202-leq8rc2qs629tldhda5tph2ic5m9c7fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnh231qB5WHfTTXpqUsSWEkxx2qt-2vMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621546375202-leq8rc2qs629tldhda5tph2ic5m9c7fj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "621546375202-hkqlua2jf5sok5claerp6b2nhjdsjb29.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ict.DelivrKo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

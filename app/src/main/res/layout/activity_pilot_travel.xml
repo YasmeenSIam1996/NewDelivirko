@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <fragment android:name="com.google.android.gms.maps.SupportMapFragment" android:id="@+id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/text_timer" android:background="@drawable/timer_back" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text=" 00:00 " android:drawablePadding="5.0dip" android:layout_centerVertical="true" android:drawableStart="@drawable/timer_icon" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+    <ImageButton android:id="@+id/currentLocationImageButton" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:src="@drawable/current_location_vector_icon" android:layout_centerVertical="true" android:contentDescription="@null" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" />
+    <include android:id="@+id/red_blue_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" layout="@layout/red_blue_button" />
+    <include android:id="@+id/place_back_map_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_alignParentTop="true" layout="@layout/place_back_map_layout" />
+    <include android:id="@+id/company_bottom_sheet_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_alignParentBottom="true" layout="@layout/company_bottom_sheet" />
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/fragRestStyle"
+    android:fillViewport="true"
+    android:background="@null"
+    tools:context=".fragment.pilot.MyAccountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/img_p_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/delivery_bg" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imgRestaurantLogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/brand_logo"
+            app:riv_corner_radius="35dp"
+            app:riv_mutate_background="true" />
+
+        <EditText
+            android:id="@+id/txtMobileUpdateRest"
+            style="@style/TxtStyleWhiteBg"
+            android:layout_width="match_parent"
+            android:layout_below="@id/imgRestaurantLogo"
+            android:layout_marginTop="@dimen/pilotChangePass_V1"
+            android:hint="@string/mobile_no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/txtEmailUpdateRest"
+            style="@style/TxtStyleWhiteBg"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txtMobileUpdateRest"
+            android:layout_marginTop="@dimen/pilotChangePass_V2"
+            android:hint="@string/txtEmail"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/tvChangePasswordRest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEmailUpdateRest"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/edit_text_marginH"
+            android:layout_marginTop="@dimen/pilotChangePass_V1"
+            android:text="@string/changePassword"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtOldPassUpdateRest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvChangePasswordRest"
+            android:layout_marginTop="@dimen/pilotChangePass_V2"
+            app:hintEnabled="false"
+            app:passwordToggleDrawable="@drawable/show_password"
+            app:passwordToggleEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtOldPassUpdate"
+                style="@style/TxtStyleWhiteBg"
+                android:hint="@string/oldPassword"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtNewPassRest"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtOldPassUpdateRest"
+            android:layout_marginTop="@dimen/pilotChangePass_V2"
+            app:hintEnabled="false"
+            app:passwordToggleDrawable="@drawable/show_password"
+            app:passwordToggleEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtNewPass"
+                style="@style/TxtStyleWhiteBg"
+                android:hint="@string/newPassword"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtConfirmRest"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNewPassRest"
+            android:layout_marginTop="@dimen/pilotChangePass_V2"
+            app:hintEnabled="false"
+            android:layout_marginBottom="90dp"
+            app:passwordToggleDrawable="@drawable/show_password"
+            app:passwordToggleEnabled="true">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/txtConfirm"
+                style="@style/TxtStyleWhiteBg"
+                android:hint="@string/confirmPassword"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btnUpdateRest"
+                style="@style/ButtonStyleActivity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btnHeight"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/edit_text_marginH"
+                android:text="@string/dataUpdate" />
+    </RelativeLayout>
+</ScrollView>

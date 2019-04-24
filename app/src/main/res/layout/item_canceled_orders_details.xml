@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerOrders"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E2E5E9"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderId"
+            style="@style/OrdersTableTextStyle"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderTime"
+            style="@style/OrdersTableTextStyle"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/droid_arabic_kufi"
+            android:gravity="end"
+            android:text="02:45"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOrderTimeHint"
+            style="@style/OrdersTableTextStyle"
+            android:layout_marginStart="3dp"
+            android:gravity="start"
+            android:text="صباحاً"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvOrderDate"
+            style="@style/OrdersTableTextStyle"
+            android:text="2018/12/12"
+            android:fontFamily="@font/droid_arabic_kufi"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgGoDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_go_to_details" />
+    </LinearLayout>
+</LinearLayout>
